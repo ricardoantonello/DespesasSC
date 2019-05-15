@@ -62,7 +62,7 @@ def imprime_matriz(m):
 
 def gera_csv(m):
     print('\nGerando CSV...\n')
-    with open('charles.csv', 'w', newline='') as csvfile:
+    with open('base_unificada.csv', 'w', newline='') as csvfile:
         spamwriter = csv.writer(csvfile, delimiter=';', quotechar=' ', quoting=csv.QUOTE_MINIMAL)
         for e in m:
             spamwriter.writerow(e)
